@@ -17,6 +17,10 @@ function getUnitBy(filter) {
     .first();
 }
 
+function getAll() {
+  return db("units");
+}
+
 function delUnit(id) {
   return db("units")
     .where({ id })
@@ -26,5 +30,6 @@ function delUnit(id) {
 module.exports = {
   addUnit,
   getUnitBy,
-  delUnit
+  delUnit,
+  getAll
 };
