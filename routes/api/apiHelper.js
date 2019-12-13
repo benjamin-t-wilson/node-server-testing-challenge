@@ -17,3 +17,9 @@ function delUnit(id) {
     .where({ id })
     .del();
 }
+
+module.exports = {
+  addUnit,
+  getUnitBy,
+  delUnit
+};
